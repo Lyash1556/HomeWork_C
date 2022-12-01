@@ -59,3 +59,19 @@ else
 
 Console.Write("The max number is " + max);
 */
+
+//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+Console.WriteLine("The program for find an even number");
+
+Console.Write("Input your number: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+if((n % 2) == 0)
+{
+    Console.WriteLine("Your number " + n + " is even");
+}
+else
+{
+    Console.WriteLine("Your number is not even");
+}
