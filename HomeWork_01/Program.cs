@@ -20,13 +20,13 @@ else
 
 //Задача № 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
-Console.WriteLine("Program for find max number between three numbers");
-
+/*
 int max;
+
+Console.WriteLine("Program for find max number between three numbers");
 
 Console.Write("Input the first number: ");
 int a = Convert.ToInt32(Console.ReadLine());
-max = a;
 
 Console.Write("Input the second number: ");
 int b = Convert.ToInt32(Console.ReadLine());
@@ -34,15 +34,28 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.Write("input the third number: ");
 int c = Convert.ToInt32(Console.ReadLine());
 
-if(b > max)
+if(a > b)
 {
-    Console.Write("The max number is " + max);
+    if(a > c)
+    {
+        max = a;
+    }
+    else
+    {
+        max = c;
+    }
 }
-if(c > max)
+else    
 {
-    Console.Write("The max number is " + c);
+    if(b > c)
+    {
+        max = b;
+    }
+    else
+    {
+        max = c;
+    }
 }
-else
-{
-    Console.Write("The max number is " + a);
-}
+
+Console.Write("The max number is " + max);
+*/
