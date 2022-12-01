@@ -62,6 +62,7 @@ Console.Write("The max number is " + max);
 
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
+/*
 Console.WriteLine("The program for find an even number");
 
 Console.Write("Input your number: ");
@@ -74,4 +75,28 @@ if((n % 2) == 0)
 else
 {
     Console.WriteLine("Your number is not even");
+}
+*/
+
+//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.WriteLine("The program for show all even nubers between 1 and N");
+Console.Write("Input any number: ");
+
+int n = Convert.ToInt32(Console.ReadLine());
+int current = 2;
+
+Console.Write("Even numbers are: ");
+
+while(current < n)
+{
+    if((current % 2) == 0)
+    {
+        Console.Write(current + " ");
+        current = current + 1;            
+    } 
+    else
+    {
+        current = current + 1;
+    }
 }
