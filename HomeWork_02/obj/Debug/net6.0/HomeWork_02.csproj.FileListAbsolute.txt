@@ -1,0 +1,15 @@
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.csproj.AssemblyReference.cache
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.AssemblyInfoInputs.cache
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.AssemblyInfo.cs
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.csproj.CoreCompileInputs.cache
+C:\Other\Csharp\HomeWork_C\HomeWork_02\bin\Debug\net6.0\HomeWork_02.exe
+C:\Other\Csharp\HomeWork_C\HomeWork_02\bin\Debug\net6.0\HomeWork_02.deps.json
+C:\Other\Csharp\HomeWork_C\HomeWork_02\bin\Debug\net6.0\HomeWork_02.runtimeconfig.json
+C:\Other\Csharp\HomeWork_C\HomeWork_02\bin\Debug\net6.0\HomeWork_02.dll
+C:\Other\Csharp\HomeWork_C\HomeWork_02\bin\Debug\net6.0\HomeWork_02.pdb
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.dll
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\refint\HomeWork_02.dll
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.pdb
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\HomeWork_02.genruntimeconfig.cache
+C:\Other\Csharp\HomeWork_C\HomeWork_02\obj\Debug\net6.0\ref\HomeWork_02.dll
