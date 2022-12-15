@@ -1,7 +1,7 @@
 ﻿//Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
 /*
-Console.WriteLine("The program for check the number is palindrome or not.");
+    
 
 bool Palindrome(int number)
 {
