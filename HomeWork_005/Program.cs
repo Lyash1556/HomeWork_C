@@ -1,0 +1,35 @@
+﻿//Семинар arrays
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Console.WriteLine("The program for find the power of number.");
