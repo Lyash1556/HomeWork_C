@@ -149,17 +149,24 @@ void ShowArray(double[] array)
 
 double FindDifference(double[] array)
 {
+    double max = array.Max();
+    double min = array.Min();
+    
+    double diff = max - min;
+    /*    
     double min = array[0];
     double max = array[0];
+    double diff = 0;
 
         for (int i = 0; i < array.Length; i++)
     {
         if(array[i] > max)
             array[i] = max;
-        if(array[i] < min)
-            array[i] = min;
+        //if(array[i] < min)
+        //    array[i] = min;
     }
-    return max, min;
+*/    //diff = max - min;
+    return diff;
 }
 
 Console.Write("Input namber elemets: ");
