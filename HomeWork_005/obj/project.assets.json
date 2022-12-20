@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\UserZ\\.nuget\\packages\\": {}
+    "C:\\Users\\Gigabyte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_005\\HomeWork_005.csproj",
+      "projectUniqueName": "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_005\\HomeWork_005.csproj",
       "projectName": "HomeWork_005",
-      "projectPath": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_005\\HomeWork_005.csproj",
-      "packagesPath": "C:\\Users\\UserZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_005\\obj\\",
+      "projectPath": "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_005\\HomeWork_005.csproj",
+      "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
+      "outputPath": "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_005\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UserZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Gigabyte\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

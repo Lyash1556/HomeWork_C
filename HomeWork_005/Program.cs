@@ -52,16 +52,11 @@ ShowArray(myArray);
 int result = FindNumber(myArray);
 
 Console.Write($"The amount even numbers of array is: {result}");
-
 */
 
 
 
-
-
 //Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-
-
 
 /*
 Console.WriteLine("The program for find the sum not even numbers of array.");
@@ -112,15 +107,13 @@ ShowArray(myArray);
 
 int result = FindSumNumbers(myArray);
 Console.Write($"The sum not even numbers of array is: {result}");
-
 */
 
 
 
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-//[3 7 22 2 78] -> 76
-
+/*
 Console.WriteLine("The program for find the difference between max Value and min value of array.");
 
 double[] CreateUserArray(int size)
@@ -142,31 +135,24 @@ void ShowArray(double[] array)
         if (i == array.Length - 1)
             Console.Write(array[i]);
         else    
-        Console.Write(array[i] + ", ");
+            Console.Write(array[i] + ", ");
     }
     Console.WriteLine();
 }
 
 double FindDifference(double[] array)
 {
-    double max = array.Max();
-    double min = array.Min();
-    
-    double diff = max - min;
-    /*    
-    double min = array[0];
     double max = array[0];
+    double min = array[0];
     double diff = 0;
 
-        for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] > max)
-            array[i] = max;
-        //if(array[i] < min)
-        //    array[i] = min;
+        if(array[i] > max) max = array[i];
+        if(array[i] < min) min = array[i];
     }
-*/    //diff = max - min;
-    return diff;
+   diff = max - min;
+   return diff;
 }
 
 Console.Write("Input namber elemets: ");
@@ -178,3 +164,4 @@ ShowArray(myArray);
 
 double result = FindDifference(myArray);
 Console.Write($"The difference between max and min elements array is: {result}");
+*/
