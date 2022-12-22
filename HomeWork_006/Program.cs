@@ -41,5 +41,26 @@ Console.Write($"The amount of positive numbers is {result}.");
 //исключения если прямые параллельны.
 //две прямые погут совпадать
 
+void FindTochka(int b1, int k1, int b2, int k2)
+{
+    if(k1 != k2)
+    {
+        int x = (b2 - b1)/(k1 - k2);
+        int y = k2 * x + b1;
+        Console.WriteLine($"точка пересечения на кооодинатах: {x} ; {y} .") 
+    }           
+    else Console.WriteLine("Прямые параллельны одна другой");    
+}
 
+
+Console.Write("Введите число b1")
+bb1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число k1")
+kk1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число b2")
+bb2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число k2")
+kk2 = Convert.ToInt32(Console.ReadLine());
+
+FindTochka(bb1, kk1, bb2, kk2);
 
