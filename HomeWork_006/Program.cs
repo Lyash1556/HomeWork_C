@@ -31,7 +31,7 @@ Console.Write($"The amount of positive numbers is {result}.");
 /*
 Console.WriteLine("You are using the program for finding the point of intersection of straight lines by equations y = k1 * x + b1, y = k2 * x + b2.");
 
-void FindTochka(double b1, double k1, double b2, double k2)
+void FindPoint(double b1, double k1, double b2, double k2)
 {
     if(k1 != k2)
     {
@@ -51,5 +51,5 @@ double bb2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("input number k2: ");
 double kk2 = Convert.ToInt32(Console.ReadLine());
 
-FindTochka(bb1, kk1, bb2, kk2);
+FindPoint(bb1, kk1, bb2, kk2);
 */
