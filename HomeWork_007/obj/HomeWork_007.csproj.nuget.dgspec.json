@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj": {}
+    "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj": {}
   },
   "projects": {
-    "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj": {
+    "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj",
+        "projectUniqueName": "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj",
         "projectName": "HomeWork_007",
-        "projectPath": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj",
-        "packagesPath": "C:\\Users\\UserZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_007\\obj\\",
+        "projectPath": "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_007\\HomeWork_007.csproj",
+        "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
+        "outputPath": "E:\\GB\\HomeWork_C\\HomeWork_C\\HomeWork_007\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UserZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Gigabyte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

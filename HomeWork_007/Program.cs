@@ -36,9 +36,9 @@ void Show2dArray(int[,] array)
 
 //Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
-
-Console.WriteLine("This program creates a two-dimensional array of random real numbers.");
 /*
+Console.WriteLine("This program creates a two-dimensional array of random real numbers.");
+
 double[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -144,3 +144,54 @@ FindElement(myArray, a, b);
 //вернуть 1 мерный массив.
 
 
+int[,] CreateRandom2dArray()
+{
+    Console.Write("Input a number of rows: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input a number of columns: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input a min passible value: ");
+    int minvalue = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input a max passible value: ");
+    int maxvalue = Convert.ToInt32(Console.ReadLine());
+    int [,] array = new int[rows, columns];
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            array[i,j] = new Random().Next(minvalue, maxvalue + 1);
+    return array;
+}
+
+void Show2dArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j] + "\t");
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+
+int[] FindAverage(int[,] array)
+{
+    int average = 0;
+    int[] arr = new int[6]; 
+    
+        for (int i = 0; i < array.GetLength(1); i++)
+        {
+            for (int j = 0; j < array.GetLength(0); j++)
+            {
+                average = average + array[i, j];
+                arr[i] = average;                
+            }
+        }
+    return arr;
+}
+
+
+int [,] myArray = CreateRandom2dArray();
+
+Show2dArray(myArray);
+
+FindAverage(myArray);
