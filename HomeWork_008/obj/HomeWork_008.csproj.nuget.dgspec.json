@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {}
+    "F:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {}
   },
   "projects": {
-    "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {
+    "F:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
+        "projectUniqueName": "F:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
         "projectName": "HomeWork_008",
-        "projectPath": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
-        "packagesPath": "C:\\Users\\UserZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Other\\Csharp\\HomeWork_C\\HomeWork_C\\HomeWork_008\\obj\\",
+        "projectPath": "F:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
+        "packagesPath": "C:\\Users\\UserHome\\.nuget\\packages\\",
+        "outputPath": "F:\\GB\\C\\HomeWork_C\\HomeWork_008\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UserZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\UserHome\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

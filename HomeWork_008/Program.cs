@@ -130,7 +130,7 @@ Console.WriteLine($"Первая строка с наименьшей суммо
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 
-
+/*
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -163,31 +163,33 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 
-int[,] ProductArrays(int[,] arr1, int[,] arr2)
+int[,] ProductMatrix(int[,] arrA, int[,] arrB)
 {
-    int [,] array = new int[arr1.GetLength(0), arr1.GetLength(1)];
-    for (int x = 0; x < arr1.GetLength(0); x++)
-    {        
-        for (int y = 0; y < arr1.GetLength(0); y++)
-        {
-            for (int i = 0, l = 0; i < arr1.GetLength(0); i++, l++)
-            {
-                for (int j = 0, k = 0; j < arr1.GetLength(0); j++, k++)
-                {
-                    array[i,j] = arr1[i,j] * arr2[k,l];
-                }
-            }
-        }
+    int aRows = arrA.GetLength(0);
+    int aColumns = arrA.GetLength(1);
+    int bRows = arrB.GetLength(0);
+    int bColumns = arrB.GetLength(1);
+    int [,] result = new int[aRows, bColumns];
+    if(aColumns != bRows)
+        Console.WriteLine("Матрицы не подходят для операции");
+    else
+    {   
+        for (int i = 0; i < aRows; i++)
+            for (int j = 0; j < bColumns; j++)
+                for (int k = 0; k < aColumns; k++)
+                    result[i,j] = result[i,j] + arrA[i,k] * arrB[k,j];
     }
+return result;    
 }
-    
-int[,] array1 = CreateRandom2dArray();
-Show2dArray(array1);
-Console.WriteLine();
 
-int[,] array2 = CreateRandom2dArray();
-Show2dArray(array2);
+int[,] arrayA = CreateRandom2dArray();
+int[,] arrayB = CreateRandom2dArray();
+Show2dArray(arrayA);
+Show2dArray(arrayB);
 
+int[,] result = ProductMatrix(arrayA, arrayB);
+Show2dArray(result);
+*/
 
 
 
