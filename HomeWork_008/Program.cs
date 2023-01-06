@@ -1,5 +1,10 @@
-﻿// 54 задача Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+﻿//54 задача Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы 
+//каждой строки двумерного массива.
+
+
 /*
+Console.WriteLine("This program orders the elements of each row of a two-dimensional array.");
+
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -47,18 +52,21 @@ int[,] SortRows(int[,] array)
 }
 
 int[,] myArray = CreateRandom2dArray();
+Console.WriteLine("This is oridginal array:");
 Show2dArray(myArray);
 
 int[,] sortArray = SortRows(myArray);
+Console.WriteLine("This is sorted array:");
 Show2dArray(sortArray);
-
-
-
 */
 
 
-//Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+//Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку 
+//с наименьшей суммой элементов.
+
 /*
+Console.WriteLine("This program to search for a string with a minimum sum of elements.");
+
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -119,18 +127,19 @@ int FindMinSumRow(int[,] array)
 }
 
 int[,] myArray = CreateRandom2dArray();
+Console.WriteLine();
 Show2dArray(myArray);
 
 int result = FindMinSumRow(myArray);
-Console.WriteLine($"Первая строка с наименьшей суммой элементов - {result} строка");
-
-
+Console.WriteLine($"The first string with minimal sum of elements is - {result} string.");
 */
 
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 
 /*
+Console.WriteLine("This program to search the product of two arrays.");
+
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -171,7 +180,7 @@ int[,] ProductMatrix(int[,] arrA, int[,] arrB)
     int bColumns = arrB.GetLength(1);
     int [,] result = new int[aRows, bColumns];
     if(aColumns != bRows)
-        Console.WriteLine("Матрицы не подходят для операции");
+        Console.WriteLine("arrays are not suitable for operation.");
     else
     {   
         for (int i = 0; i < aRows; i++)
@@ -184,27 +193,23 @@ return result;
 
 int[,] arrayA = CreateRandom2dArray();
 int[,] arrayB = CreateRandom2dArray();
+Console.WriteLine("The first array:");
 Show2dArray(arrayA);
+Console.WriteLine("The second array:");
 Show2dArray(arrayB);
 
+Console.WriteLine("The product of two arrays is:");
 int[,] result = ProductMatrix(arrayA, arrayB);
 Show2dArray(result);
 */
 
-
-
 //Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
 //которая будет построчно выводить массив, добавляя индексы каждого элемента.
-//
+
 /*
-Массив размером 2 x 2 x 2
-66(0,0,0) 25(0,1,0)
-34(1,0,0) 41(1,1,0)
-27(0,0,1) 90(0,1,1)
-26(1,0,1) 55(1,1,1)
- */
-/*
- int[, ,] CreateRandom3dArray()
+Console.WriteLine("This program for show 3D array with unique two-digit elements.");
+
+int[, ,] CreateRandom3dArray()
 {
     Console.Write("Input a number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
@@ -212,70 +217,73 @@ Show2dArray(result);
     int columns = Convert.ToInt32(Console.ReadLine());
     Console.Write("Input a number of pages: ");
     int pages = Convert.ToInt32(Console.ReadLine());
-
     int [, ,] array = new int[pages, rows, columns];
-    for (int i = 0; i < pages; i++)
-        for (int j = 0; j < rows; j++)
-            for (int k = 0; k < columns; k++)
-                array[i,j,k] = new Random().Next(10, 100);
-                                                    
+    
     return array;
+}
+
+void CorrectArray(int [,,] array)
+{
+    int[] tempArray = new int [array.GetLength(0) * array.GetLength(1) * array.GetLength(2)];
+    int n;
+    for (int i = 0; i < tempArray.Length; i++)
+    {
+        tempArray[i] = new Random().Next(10,100);
+        n = tempArray[i];
+        if(i >= 1)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                while(tempArray[i] == tempArray[j])
+                {
+                    tempArray[i] = new Random().Next(10,100);
+                    j = 0;
+                    n = tempArray[i];
+                }
+                n = tempArray[i];
+            }
+        }
+    }
+
+    int count = 0;
+    for (int x = 0; x < array.GetLength(0); x++)
+        for (int y = 0; y < array.GetLength(1); y++)
+            for (int z = 0; z < array.GetLength(2); z++)
+            {
+                array[x,y,z] = tempArray[count];
+                count++;
+            }
 }
 
 void Show3dArray(int[,,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
-    {    for (int j = 0; j < array.GetLength(1); j++)
+    {   
+        for (int j = 0; j < array.GetLength(1); j++)
             for (int k = 0; k < array.GetLength(2); k++)
             {     
                 Console.Write(array[i,j,k] + ($" ({i}, {j}, {k})") + "\t");
             }
-
         Console.WriteLine();
     }
     Console.WriteLine();
 }
 
-int [,,] CorrectArray(int [,,] array)
-{
-    int [, ,] newArr = new int[array.GetLength(0), array.GetLength(1), array.GetLength(2)];
-    for (int x = 0; x < array.GetLength(0); x++)
-        for (int y = 0; y < array.GetLength(1); y++)
-            for (int z = 0; z < array.GetLength(2); z++)
-                for (int i = 0; i < array.GetLength(0); i++)
-                    for (int j = 0; j < array.GetLength(1); j++)
-                        for (int k = 0; k < array.GetLength(2); k++)
-                        {
-                        if(array[i,j,k] == array[x,y,z])
-                            newArr[i,j,k] = 0;
-                        }
-            
-    return newArr;
-}
-
-
-
 int[,,] myArray = CreateRandom3dArray();
-Show3dArray(myArray);
 
-int[,,] result = CorrectArray(myArray);
-Show3dArray(result);
+CorrectArray(myArray);
+Show3dArray(myArray);
 */
+
 
 //Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
-/*Например, на выходе получается вот такой массив:
-01 02 03 04
-12 13 14 05
-11 16 15 06
-10 09 08 07
-*/
+/*
+Console.WriteLine("This program fills the array 4*4 with a spiral.");
 
 int[,] CreateRandom2dArray()
 {
-    //Console.Write("Input a number of rows: ");
-    int rows = 4; //Convert.ToInt32(Console.ReadLine());
-    //Console.Write("Input a number of columns: ");
-    int columns = 4; //Convert.ToInt32(Console.ReadLine());
+    int rows = 4; 
+    int columns = 4; 
     
     int [,] array = new int[rows, columns];
     int count = 0;
@@ -324,26 +332,6 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 
-/*
-int[,] ProductMatrix(int[,] arrA, int[,] arrB)
-{
-    int aRows = arrA.GetLength(0);
-    int aColumns = arrA.GetLength(1);
-    int bRows = arrB.GetLength(0);
-    int bColumns = arrB.GetLength(1);
-    int [,] result = new int[aRows, bColumns];
-    if(aColumns != bRows)
-        Console.WriteLine("Матрицы не подходят для операции");
-    else
-    {   
-        for (int i = 0; i < aRows; i++)
-            for (int j = 0; j < bColumns; j++)
-                for (int k = 0; k < aColumns; k++)
-                    result[i,j] = result[i,j] + arrA[i,k] * arrB[k,j];
-    }
-return result;    
-}
-*/
 int[,] myArray = CreateRandom2dArray();
 Show2dArray(myArray);
-
+*/
