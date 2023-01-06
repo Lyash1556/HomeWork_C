@@ -193,7 +193,6 @@ Show2dArray(result);
 
 
 
-
 //Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
 //которая будет построчно выводить массив, добавляя индексы каждого элемента.
 //
@@ -204,7 +203,7 @@ Show2dArray(result);
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1)
  */
-
+/*
  int[, ,] CreateRandom3dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -213,15 +212,13 @@ Show2dArray(result);
     int columns = Convert.ToInt32(Console.ReadLine());
     Console.Write("Input a number of pages: ");
     int pages = Convert.ToInt32(Console.ReadLine());
-    int minvalue = 10;
-    int maxvalue = 99;
 
-    int [, ,] array = new int[rows, columns, pages];
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < columns; j++)
-            for (int k = 0; k < pages; k++)
-                array[i,j,k] = new Random().Next(minvalue, maxvalue + 1);
-                                    
+    int [, ,] array = new int[pages, rows, columns];
+    for (int i = 0; i < pages; i++)
+        for (int j = 0; j < rows; j++)
+            for (int k = 0; k < columns; k++)
+                array[i,j,k] = new Random().Next(10, 100);
+                                                    
     return array;
 }
 
@@ -239,21 +236,31 @@ void Show3dArray(int[,,] array)
     Console.WriteLine();
 }
 
-
-
 int [,,] CorrectArray(int [,,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
-        for (int j = 0; j < array.GetLength(1); j++)
-            for (int k = 0; k < array.GetLength(2); k++)
-    return array;
- 
+    int [, ,] newArr = new int[array.GetLength(0), array.GetLength(1), array.GetLength(2)];
+    for (int x = 0; x < array.GetLength(0); x++)
+        for (int y = 0; y < array.GetLength(1); y++)
+            for (int z = 0; z < array.GetLength(2); z++)
+                for (int i = 0; i < array.GetLength(0); i++)
+                    for (int j = 0; j < array.GetLength(1); j++)
+                        for (int k = 0; k < array.GetLength(2); k++)
+                        {
+                        if(array[i,j,k] == array[x,y,z])
+                            newArr[i,j,k] = 0;
+                        }
+            
+    return newArr;
 }
+
+
 
 int[,,] myArray = CreateRandom3dArray();
 Show3dArray(myArray);
 
-
+int[,,] result = CorrectArray(myArray);
+Show3dArray(result);
+*/
 
 //Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 /*Например, на выходе получается вот такой массив:
@@ -262,3 +269,81 @@ Show3dArray(myArray);
 11 16 15 06
 10 09 08 07
 */
+
+int[,] CreateRandom2dArray()
+{
+    //Console.Write("Input a number of rows: ");
+    int rows = 4; //Convert.ToInt32(Console.ReadLine());
+    //Console.Write("Input a number of columns: ");
+    int columns = 4; //Convert.ToInt32(Console.ReadLine());
+    
+    int [,] array = new int[rows, columns];
+    int count = 0;
+    for (int j = 0, i = 0; j < columns; j++)
+        { 
+            array[i,j] = count + 1;
+            count += 1;
+        }
+    for (int i = 1, j = columns - 1; i < rows; i++)
+        {
+            array[i,j] = count + 1;
+            count += 1;
+        }
+    for (int i = rows - 1, j = columns - 2; j >= 0; j--)
+        {
+            array[i,j] = count + 1;
+            count += 1;
+        }
+    for (int i = rows - 2, j = 0; i > 0; i--)
+        {
+            array[i,j] = count + 1;
+            count += 1;
+        }
+    for (int i = 1, j = 1; j < columns - 1; j++)
+        {
+            array[i,j] = count + 1;
+            count += 1;
+        }
+    for (int i = 2, j = 2; j > 0; j--)
+        {
+            array[i,j] = count + 1;
+            count += 1;
+        }
+    return array;
+}
+
+void Show2dArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j] + "\t");
+
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+/*
+int[,] ProductMatrix(int[,] arrA, int[,] arrB)
+{
+    int aRows = arrA.GetLength(0);
+    int aColumns = arrA.GetLength(1);
+    int bRows = arrB.GetLength(0);
+    int bColumns = arrB.GetLength(1);
+    int [,] result = new int[aRows, bColumns];
+    if(aColumns != bRows)
+        Console.WriteLine("Матрицы не подходят для операции");
+    else
+    {   
+        for (int i = 0; i < aRows; i++)
+            for (int j = 0; j < bColumns; j++)
+                for (int k = 0; k < aColumns; k++)
+                    result[i,j] = result[i,j] + arrA[i,k] * arrB[k,j];
+    }
+return result;    
+}
+*/
+int[,] myArray = CreateRandom2dArray();
+Show2dArray(myArray);
+

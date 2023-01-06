@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {}
+    "E:\\GB\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {}
   },
   "projects": {
-    "D:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {
+    "E:\\GB\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
+        "projectUniqueName": "E:\\GB\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
         "projectName": "HomeWork_008",
-        "projectPath": "D:\\GB\\C\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
-        "packagesPath": "C:\\Users\\UserHome\\.nuget\\packages\\",
-        "outputPath": "D:\\GB\\C\\HomeWork_C\\HomeWork_008\\obj\\",
+        "projectPath": "E:\\GB\\HomeWork_C\\HomeWork_008\\HomeWork_008.csproj",
+        "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
+        "outputPath": "E:\\GB\\HomeWork_C\\HomeWork_008\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UserHome\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Gigabyte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
